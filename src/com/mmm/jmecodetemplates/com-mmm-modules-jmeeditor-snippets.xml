@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE codetemplates PUBLIC "-//NetBeans//DTD Editor Code Templates settings 1.0//EN" "http://www.netbeans.org/dtds/EditorCodeTemplates-1_0.dtd">
+<codetemplates>
+    <codetemplate abbreviation="newqua" xml:space="preserve">
+        <code><![CDATA[${no-indent}Quaternion ${TYPE default = "quat"} = new Quaternion();]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="newvec3" xml:space="preserve">
+        <code><![CDATA[${no-indent}Vector3f ${TYPE default = "vec3"} = new Vector3f(1f, 1f, 1f);]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="newpmat" xml:space="preserve">
+        <code><![CDATA[${no-indent}Material ${TYPE default = "particleMat"} = new Material (assetManager, "Common/MatDefs/Misc/Particle.j3md");]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="newtest" xml:space="preserve">
+        <code><![CDATA[public class ${TYPE default="ClassName"} extends SimpleApplication {
+    public static void main (String[] args) {
+        new ${TYPE}().start();
+    }
+
+    @Override
+    public void simpleInitApp () {
+        ${cursor}
+    }
+}]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="newvec2" xml:space="preserve">
+        <code><![CDATA[${no-indent}Vector2f ${TYPE default = "vec2"} = new Vector2f(1f, 1f);]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="no" xml:space="preserve">
+        <code><![CDATA[${no-indent}node]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="newchar" xml:space="preserve">
+        <code><![CDATA[${no-indent}CharacterControl ${TYPE default = "charControl"} = new CharacterControl (${TYPE default ="cShape, 0.1f"});]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="ge" xml:space="preserve">
+        <code><![CDATA[${no-indent}geometry]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="bu" xml:space="preserve">
+        <code><![CDATA[${no-indent}bulletAppState]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="Ccs" xml:space="preserve">
+        <code><![CDATA[${no-indent}CapsuleCollisionShape]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="gui" xml:space="preserve">
+        <code><![CDATA[${no-indent}guiNode]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="newccs" xml:space="preserve">
+        <code><![CDATA[${no-indent}CapsuleCollisionShape ${TYPE default = "capCShape"} = new CapsuleCollisionShape (${TYPE default ="1f, 3f, 1"});]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="Co" xml:space="preserve">
+        <code><![CDATA[${no-indent}Control]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="newme" xml:space="preserve">
+        <code><![CDATA[${no-indent}Mesh ${TYPE default = "mesh"} = new Mesh (${cursor});]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="Inp" xml:space="preserve">
+        <code><![CDATA[${no-indent}InputManager]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="physt" xml:space="preserve">
+        <code><![CDATA[${no-indent}PhysicsTickListener]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="Qua" xml:space="preserve">
+        <code><![CDATA[${no-indent}Quaternion]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="newcol" xml:space="preserve">
+        <code><![CDATA[${no-indent}ColorRGBA ${TYPE default = "color"} = new ColorRGBA (0.5f, 0.5f, 0.5f, 1f);]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="newbcs" xml:space="preserve">
+        <code><![CDATA[${no-indent}BoxCollisionShape ${TYPE default = "boxCShape"} = new BoxCollisionShape (${TYPE default ="1, 1, 1"});]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="inp" xml:space="preserve">
+        <code><![CDATA[${no-indent}inputManager]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="ColM" xml:space="preserve">
+        <code><![CDATA[${no-indent}"ColorMap"]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="Dir" xml:space="preserve">
+        <code><![CDATA[${no-indent}DirectionalLight]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="sp" xml:space="preserve">
+        <code><![CDATA[${no-indent}spatial]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="sta" xml:space="preserve">
+        <code><![CDATA[${no-indent}stateManager]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="newray" xml:space="preserve">
+        <code><![CDATA[${no-indent}Ray ${TYPE default ="ray"} = new Ray(cam.getLocation(), cam.getDirection());]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="physc" xml:space="preserve">
+        <code><![CDATA[${no-indent}PhysicsCollisionListener]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="se" xml:space="preserve">
+        <code><![CDATA[${no-indent}settings]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="si" xml:space="preserve">
+        <code><![CDATA[${no-indent}simpleApplication]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="Me" xml:space="preserve">
+        <code><![CDATA[${no-indent}Mesh]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="co" xml:space="preserve">
+        <code><![CDATA[${no-indent}control]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="newtmat" xml:space="preserve">
+        <code><![CDATA[${no-indent}Material ${TYPE default = "terrainMat"} = new Material (assetManager, "Common/MatDefs/Terrain/Terrain.j3md");]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="newumat" xml:space="preserve">
+        <code><![CDATA[${no-indent}Material ${TYPE default="unshadedMat"} = new Material (assetManager, "Common/MatDefs/Misc/Unshaded.j3md");]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="newsph" xml:space="preserve">
+        <code><![CDATA[${no-indent}Sphere ${TYPE default="sphere"} = new Sphere(${cursor}10, 10, 1);]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="ColR" xml:space="preserve">
+        <code><![CDATA[${no-indent}CollisionResults]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="Shi" xml:space="preserve">
+        <code><![CDATA[${no-indent}"Shininess"]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="ro" xml:space="preserve">
+        <code><![CDATA[${no-indent}rootNode]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="roach" xml:space="preserve">
+        <code><![CDATA[${no-indent}rootNode.attachChild(${cursor});]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="newgc" xml:space="preserve">
+        <code><![CDATA[${no-indent}GhostControl ${TYPE default = "ghostControl"} = new GhostControl (${cursor});]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="vi" xml:space="preserve">
+        <code><![CDATA[${no-indent}viewport]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="Si" xml:space="preserve">
+        <code><![CDATA[${no-indent}SimpleApplication]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="newac" xml:space="preserve">
+        <code><![CDATA[${no-indent}ActionListener ${TYPE default = "actionListener"} = new ActionListener() {
+    public void onAction(String name, boolean keyPressed, float tpf) {
+        if (name.equals(${TYPE1 default = ""}) && !keyPressed) {
+            ${cursor}
+        }
+    }
+};]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="newge" xml:space="preserve">
+        <code><![CDATA[${no-indent}Geometry ${TYPE default="geometry"} = new Geometry ("${TYPE default = name}", ${cursor});]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="newam" xml:space="preserve">
+        <code><![CDATA[${no-indent}AmbientLight ${TYPE default = "ambientLight"} = new AmbientLight ();]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="newan" xml:space="preserve">
+        <code><![CDATA[${no-indent}AnalogListener ${TYPE default = "actionListener"} = new AnalogListener() {
+    public void onAnalog(String name, float value, float tpf) {
+        if (name.equals(${TYPE1 default = ""})) {
+            ${cursor}
+        }
+    }
+};]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="Gho" xml:space="preserve">
+        <code><![CDATA[${no-indent}GhostControl]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="newno" xml:space="preserve">
+        <code><![CDATA[${no-indent}Node ${TYPE default="node"} = new Node (${TYPE1 default = "nodeName"});]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="newdir" xml:space="preserve">
+        <code><![CDATA[${no-indent}DirectionalLight ${TYPE default = "dirLight"} = new DirectionalLight (new Vector3f (${TYPE default="1, 1, 1"}));]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="jaxbu" xml:space="preserve">
+        <code><![CDATA[
+            try {
+                javax.xml.bind.JAXBContext jaxbCtx = javax.xml.bind.JAXBContext.newInstance(${UM_OBJ instanceof="java.lang.Object" default="umObj"}.getClass().getPackage().getName());
+                javax.xml.bind.Unmarshaller unmarshaller = jaxbCtx.createUnmarshaller();
+                ${UM_OBJ} = ${TYPE_CAST cast default=""} unmarshaller.unmarshal(new java.io.File("File path")); //NOI18N
+            } catch (javax.xml.bind.JAXBException ex) {
+                // XXXTODO Handle exception
+                java.util.logging.Logger.getLogger("global").log(java.util.logging.Level.SEVERE, null, ex); //NOI18N
+            }
+        ]]></code>
+        <description><![CDATA[Sample template to unmarshal JAXB objects.]]></description>
+    </codetemplate>
+    <codetemplate abbreviation="Sp" xml:space="preserve">
+        <code><![CDATA[${no-indent}Spatial]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="Vec3" xml:space="preserve">
+        <code><![CDATA[${no-indent}Vector3f]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="jaxbm" xml:space="preserve">
+        <code><![CDATA[try {            
+                javax.xml.bind.JAXBContext jaxbCtx= javax.xml.bind.JAXBContext.newInstance( ${OBJ2M instanceof="java.lang.Object" default="obj2BMarshalled"}.getClass().getPackage().getName());
+                javax.xml.bind.Marshaller marshaller = jaxbCtx.createMarshaller();
+                marshaller.setProperty(javax.xml.bind.Marshaller.JAXB_ENCODING, "UTF-8"); //NOI18N
+                marshaller.setProperty(javax.xml.bind.Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
+                marshaller.marshal(${OBJ2M} , System.out);
+            } catch (javax.xml.bind.JAXBException ex) {
+                // XXXTODO Handle exception
+                java.util.logging.Logger.getLogger("global").log(java.util.logging.Level.SEVERE, null, ex); //NOI18N
+        }]]></code>
+        <description><![CDATA[Sample template to marshal JAXB objects.]]></description>
+    </codetemplate>
+    <codetemplate abbreviation="Ni" xml:space="preserve">
+        <code><![CDATA[${no-indent}Nifty]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="Vec2" xml:space="preserve">
+        <code><![CDATA[${no-indent}Vector2f]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="Ab" xml:space="preserve">
+        <code><![CDATA[${no-indent}AbstractAppState]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="Ac" xml:space="preserve">
+        <code><![CDATA[${no-indent}ActionListener]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="Am" xml:space="preserve">
+        <code><![CDATA[${no-indent}AmbientLight]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="An" xml:space="preserve">
+        <code><![CDATA[${no-indent}AnalogListener]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="me" xml:space="preserve">
+        <code><![CDATA[${no-indent}mesh]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="DiffM" xml:space="preserve">
+        <code><![CDATA[${no-indent}"DiffuseMap"]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="Scs" xml:space="preserve">
+        <code><![CDATA[${no-indent}SphereCollisionShape]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="Ge" xml:space="preserve">
+        <code><![CDATA[${no-indent}Geometry]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="newbi" xml:space="preserve">
+        <code><![CDATA[${no-indent}BitmapText ${TYPE default="bitmapText"} = new BitmapText (guiFont, false);]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="AnimL" xml:space="preserve">
+        <code><![CDATA[${no-indent}AnimEventListener]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="app" xml:space="preserve">
+        <code><![CDATA[${no-indent}AppSettings]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="Rb" xml:space="preserve">
+        <code><![CDATA[${no-indent}RigidBodyControl]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="Mcs" xml:space="preserve">
+        <code><![CDATA[${no-indent}MeshCollisionShape]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="Tan" xml:space="preserve">
+        <code><![CDATA[${no-indent}TangentBinormalGenerator]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="newcolr" xml:space="preserve">
+        <code><![CDATA[${no-indent}CollisionResults ${TYPE default="results"} = new CollisionResults ();]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="Bu" xml:space="preserve">
+        <code><![CDATA[${no-indent}BulletAppState]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="newlmat" xml:space="preserve">
+        <code><![CDATA[${no-indent}Material ${TYPE default = "lightMat"} = new Material (assetManager, "Common/MatDefs/Lighting/Lighting.j3md");]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="Bcs" xml:space="preserve">
+        <code><![CDATA[${no-indent}BoxCollisionShape]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="newscs" xml:space="preserve">
+        <code><![CDATA[${no-indent}SphereCollisionShape ${TYPE default = "sphereCShape"} = new SphereCollisionShape (${TYPE default ="1"});]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="No" xml:space="preserve">
+        <code><![CDATA[${no-indent}Node]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="newbox" xml:space="preserve">
+        <code><![CDATA[${no-indent}Box ${TYPE default="box"} = new Box (Vector3f.ZERO, new Vector3f(${cursor}));]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="in" xml:space="preserve">
+        <code><![CDATA[inp]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="newrb" xml:space="preserve">
+        <code><![CDATA[${no-indent}RigidBodyControl ${TYPE default = "rbControl"} = new RigidBodyControl (${cursor});]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="newmcs" xml:space="preserve">
+        <code><![CDATA[${no-indent}MeshCollisionShape ${TYPE default = "meshCShape"} = new MeshCollisionShape (${cursor});]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="Bi" xml:space="preserve">
+        <code><![CDATA[${no-indent}BitmapText]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="Col" xml:space="preserve">
+        <code><![CDATA[${no-indent}ColorRGBA]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="AnimCo" xml:space="preserve">
+        <code><![CDATA[${no-indent}AnimControl]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="an" xml:space="preserve">
+        <code><![CDATA[${no-indent}analogListener]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="ac" xml:space="preserve">
+        <code><![CDATA[${no-indent}actionListener]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="Sta" xml:space="preserve">
+        <code><![CDATA[${no-indent}StateManager]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="Cha" xml:space="preserve">
+        <code><![CDATA[${no-indent}CharacterControl]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="ni" xml:space="preserve">
+        <code><![CDATA[${no-indent}nifty]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="AnimCh" xml:space="preserve">
+        <code><![CDATA[${no-indent}AnimChannel]]></code>
+    </codetemplate>
+</codetemplates>

@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+OpenIDE-Module: com.mmm.jmecodetemplates
+OpenIDE-Module-Implementation-Version: 0
+OpenIDE-Module-Layer: com/mmm/jmecodetemplates/layer.xml
+OpenIDE-Module-Localizing-Bundle: com/mmm/jmecodetemplates/Bundle.properties
+OpenIDE-Module-Specification-Version: 0.8.1
+
